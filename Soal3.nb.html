@@ -1760,10 +1760,162 @@ showEqn(A,b)</code></pre>
     x3  =  0.22222222 </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdEVxbjNkKEEsYilcbmBgYCJ9 -->
+<pre class="r"><code>plotEqn3d(A,b)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZWNoZWxvbihBLGIpXG5gYGAifQ== -->
+<pre class="r"><code>echelon(A,b)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl0gWywzXSAgICAgIFssNF1cblsxLF0gICAgMSAgICAwICAgIDAgMi41MDAwMDAwXG5bMixdICAgIDAgICAgMSAgICAwIDAuNjY2NjY2N1xuWzMsXSAgICAwICAgIDAgICAgMSAwLjIyMjIyMjJcbiJ9 -->
+<pre><code>     [,1] [,2] [,3]      [,4]
+[1,]    1    0    0 2.5000000
+[2,]    0    1    0 0.6666667
+[3,]    0    0    1 0.2222222</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZWNoZWxvbihBLGIsIHZlcmJvc2U9VFJVRSwgZnJhY3Rpb25zPVRSVUUpXG5gYGAifQ== -->
+<pre class="r"><code>echelon(A,b, verbose=TRUE, fractions=TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5Jbml0aWFsIG1hdHJpeDpcbiAgICAgWywxXSBbLDJdIFssM10gWyw0XVxuWzEsXSAgMiAgIC0xICAgIDMgICAgNSAgXG5bMixdICAyICAgIDIgICAgMyAgICA3ICBcblszLF0gLTIgICAgMyAgICAwICAgLTMgIFxuXG5yb3c6IDEgXG5cbiBtdWx0aXBseSByb3cgMSBieSAxLzIgXG4gICAgIFssMV0gWywyXSBbLDNdIFssNF1cblsxLF0gICAgMSAtMS8yICAzLzIgIDUvMlxuWzIsXSAgICAyICAgIDIgICAgMyAgICA3XG5bMyxdICAgLTIgICAgMyAgICAwICAgLTNcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDIgYW5kIHN1YnRyYWN0IGZyb20gcm93IDIgXG4gICAgIFssMV0gWywyXSBbLDNdIFssNF1cblsxLF0gICAgMSAtMS8yICAzLzIgIDUvMlxuWzIsXSAgICAwICAgIDMgICAgMCAgICAyXG5bMyxdICAgLTIgICAgMyAgICAwICAgLTNcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDIgYW5kIGFkZCB0byByb3cgMyBcbiAgICAgWywxXSBbLDJdIFssM10gWyw0XVxuWzEsXSAgICAxIC0xLzIgIDMvMiAgNS8yXG5bMixdICAgIDAgICAgMyAgICAwICAgIDJcblszLF0gICAgMCAgICAyICAgIDMgICAgMlxuXG5yb3c6IDIgXG5cbiBtdWx0aXBseSByb3cgMiBieSAxLzMgXG4gICAgIFssMV0gWywyXSBbLDNdIFssNF1cblsxLF0gICAgMSAtMS8yICAzLzIgIDUvMlxuWzIsXSAgICAwICAgIDEgICAgMCAgMi8zXG5bMyxdICAgIDAgICAgMiAgICAzICAgIDJcblxuIG11bHRpcGx5IHJvdyAyIGJ5IDEvMiBhbmQgYWRkIHRvIHJvdyAxIFxuICAgICBbLDFdIFssMl0gWywzXSBbLDRdXG5bMSxdICAgIDEgICAgMCAgMy8yIDE3LzZcblsyLF0gICAgMCAgICAxICAgIDAgIDIvM1xuWzMsXSAgICAwICAgIDIgICAgMyAgICAyXG5cbiBtdWx0aXBseSByb3cgMiBieSAyIGFuZCBzdWJ0cmFjdCBmcm9tIHJvdyAzIFxuICAgICBbLDFdIFssMl0gWywzXSBbLDRdXG5bMSxdICAgIDEgICAgMCAgMy8yIDE3LzZcblsyLF0gICAgMCAgICAxICAgIDAgIDIvM1xuWzMsXSAgICAwICAgIDAgICAgMyAgMi8zXG5cbnJvdzogMyBcblxuIG11bHRpcGx5IHJvdyAzIGJ5IDEvMyBcbiAgICAgWywxXSBbLDJdIFssM10gWyw0XVxuWzEsXSAgICAxICAgIDAgIDMvMiAxNy82XG5bMixdICAgIDAgICAgMSAgICAwICAyLzNcblszLF0gICAgMCAgICAwICAgIDEgIDIvOVxuXG4gbXVsdGlwbHkgcm93IDMgYnkgMy8yIGFuZCBzdWJ0cmFjdCBmcm9tIHJvdyAxIFxuICAgICBbLDFdIFssMl0gWywzXSBbLDRdXG5bMSxdICAgMSAgICAwICAgIDAgIDUvMiBcblsyLF0gICAwICAgIDEgICAgMCAgMi8zIFxuWzMsXSAgIDAgICAgMCAgICAxICAyLzkgXG4ifQ== -->
+<pre><code>
+Initial matrix:
+     [,1] [,2] [,3] [,4]
+[1,]  2   -1    3    5  
+[2,]  2    2    3    7  
+[3,] -2    3    0   -3  
+
+row: 1 
+
+ multiply row 1 by 1/2 
+     [,1] [,2] [,3] [,4]
+[1,]    1 -1/2  3/2  5/2
+[2,]    2    2    3    7
+[3,]   -2    3    0   -3
+
+ multiply row 1 by 2 and subtract from row 2 
+     [,1] [,2] [,3] [,4]
+[1,]    1 -1/2  3/2  5/2
+[2,]    0    3    0    2
+[3,]   -2    3    0   -3
+
+ multiply row 1 by 2 and add to row 3 
+     [,1] [,2] [,3] [,4]
+[1,]    1 -1/2  3/2  5/2
+[2,]    0    3    0    2
+[3,]    0    2    3    2
+
+row: 2 
+
+ multiply row 2 by 1/3 
+     [,1] [,2] [,3] [,4]
+[1,]    1 -1/2  3/2  5/2
+[2,]    0    1    0  2/3
+[3,]    0    2    3    2
+
+ multiply row 2 by 1/2 and add to row 1 
+     [,1] [,2] [,3] [,4]
+[1,]    1    0  3/2 17/6
+[2,]    0    1    0  2/3
+[3,]    0    2    3    2
+
+ multiply row 2 by 2 and subtract from row 3 
+     [,1] [,2] [,3] [,4]
+[1,]    1    0  3/2 17/6
+[2,]    0    1    0  2/3
+[3,]    0    0    3  2/3
+
+row: 3 
+
+ multiply row 3 by 1/3 
+     [,1] [,2] [,3] [,4]
+[1,]    1    0  3/2 17/6
+[2,]    0    1    0  2/3
+[3,]    0    0    1  2/9
+
+ multiply row 3 by 3/2 and subtract from row 1 
+     [,1] [,2] [,3] [,4]
+[1,]   1    0    0  5/2 
+[2,]   0    1    0  2/3 
+[3,]   0    0    1  2/9 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZWNoZWxvbihBLGIsIHZlcmJvc2U9VFJVRSlcbmBgYCJ9 -->
+<pre class="r"><code>echelon(A,b, verbose=TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5Jbml0aWFsIG1hdHJpeDpcbiAgICAgWywxXSBbLDJdIFssM10gWyw0XVxuWzEsXSAgICAyICAgLTEgICAgMyAgICA1XG5bMixdICAgIDIgICAgMiAgICAzICAgIDdcblszLF0gICAtMiAgICAzICAgIDAgICAtM1xuXG5yb3c6IDEgXG5cbiBtdWx0aXBseSByb3cgMSBieSAwLjUgXG4gICAgIFssMV0gWywyXSBbLDNdIFssNF1cblsxLF0gICAgMSAtMC41ICAxLjUgIDIuNVxuWzIsXSAgICAyICAyLjAgIDMuMCAgNy4wXG5bMyxdICAgLTIgIDMuMCAgMC4wIC0zLjBcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDIgYW5kIHN1YnRyYWN0IGZyb20gcm93IDIgXG4gICAgIFssMV0gWywyXSBbLDNdIFssNF1cblsxLF0gICAgMSAtMC41ICAxLjUgIDIuNVxuWzIsXSAgICAwICAzLjAgIDAuMCAgMi4wXG5bMyxdICAgLTIgIDMuMCAgMC4wIC0zLjBcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDIgYW5kIGFkZCB0byByb3cgMyBcbiAgICAgWywxXSBbLDJdIFssM10gWyw0XVxuWzEsXSAgICAxIC0wLjUgIDEuNSAgMi41XG5bMixdICAgIDAgIDMuMCAgMC4wICAyLjBcblszLF0gICAgMCAgMi4wICAzLjAgIDIuMFxuXG5yb3c6IDIgXG5cbiBtdWx0aXBseSByb3cgMiBieSAwLjMzMzMzMzMgXG4gICAgIFssMV0gWywyXSBbLDNdICAgICAgWyw0XVxuWzEsXSAgICAxIC0wLjUgIDEuNSAyLjUwMDAwMDBcblsyLF0gICAgMCAgMS4wICAwLjAgMC42NjY2NjY3XG5bMyxdICAgIDAgIDIuMCAgMy4wIDIuMDAwMDAwMFxuXG4gbXVsdGlwbHkgcm93IDIgYnkgMC41IGFuZCBhZGQgdG8gcm93IDEgXG4gICAgIFssMV0gWywyXSBbLDNdICAgICAgWyw0XVxuWzEsXSAgICAxICAgIDAgIDEuNSAyLjgzMzMzMzNcblsyLF0gICAgMCAgICAxICAwLjAgMC42NjY2NjY3XG5bMyxdICAgIDAgICAgMiAgMy4wIDIuMDAwMDAwMFxuXG4gbXVsdGlwbHkgcm93IDIgYnkgMiBhbmQgc3VidHJhY3QgZnJvbSByb3cgMyBcbiAgICAgWywxXSBbLDJdIFssM10gICAgICBbLDRdXG5bMSxdICAgIDEgICAgMCAgMS41IDIuODMzMzMzM1xuWzIsXSAgICAwICAgIDEgIDAuMCAwLjY2NjY2NjdcblszLF0gICAgMCAgICAwICAzLjAgMC42NjY2NjY3XG5cbnJvdzogMyBcblxuIG11bHRpcGx5IHJvdyAzIGJ5IDAuMzMzMzMzMyBcbiAgICAgWywxXSBbLDJdIFssM10gICAgICBbLDRdXG5bMSxdICAgIDEgICAgMCAgMS41IDIuODMzMzMzM1xuWzIsXSAgICAwICAgIDEgIDAuMCAwLjY2NjY2NjdcblszLF0gICAgMCAgICAwICAxLjAgMC4yMjIyMjIyXG5cbiBtdWx0aXBseSByb3cgMyBieSAxLjUgYW5kIHN1YnRyYWN0IGZyb20gcm93IDEgXG4gICAgIFssMV0gWywyXSBbLDNdICAgICAgWyw0XVxuWzEsXSAgICAxICAgIDAgICAgMCAyLjUwMDAwMDBcblsyLF0gICAgMCAgICAxICAgIDAgMC42NjY2NjY3XG5bMyxdICAgIDAgICAgMCAgICAxIDAuMjIyMjIyMlxuIn0= -->
+<pre><code>
+Initial matrix:
+     [,1] [,2] [,3] [,4]
+[1,]    2   -1    3    5
+[2,]    2    2    3    7
+[3,]   -2    3    0   -3
+
+row: 1 
+
+ multiply row 1 by 0.5 
+     [,1] [,2] [,3] [,4]
+[1,]    1 -0.5  1.5  2.5
+[2,]    2  2.0  3.0  7.0
+[3,]   -2  3.0  0.0 -3.0
+
+ multiply row 1 by 2 and subtract from row 2 
+     [,1] [,2] [,3] [,4]
+[1,]    1 -0.5  1.5  2.5
+[2,]    0  3.0  0.0  2.0
+[3,]   -2  3.0  0.0 -3.0
+
+ multiply row 1 by 2 and add to row 3 
+     [,1] [,2] [,3] [,4]
+[1,]    1 -0.5  1.5  2.5
+[2,]    0  3.0  0.0  2.0
+[3,]    0  2.0  3.0  2.0
+
+row: 2 
+
+ multiply row 2 by 0.3333333 
+     [,1] [,2] [,3]      [,4]
+[1,]    1 -0.5  1.5 2.5000000
+[2,]    0  1.0  0.0 0.6666667
+[3,]    0  2.0  3.0 2.0000000
+
+ multiply row 2 by 0.5 and add to row 1 
+     [,1] [,2] [,3]      [,4]
+[1,]    1    0  1.5 2.8333333
+[2,]    0    1  0.0 0.6666667
+[3,]    0    2  3.0 2.0000000
+
+ multiply row 2 by 2 and subtract from row 3 
+     [,1] [,2] [,3]      [,4]
+[1,]    1    0  1.5 2.8333333
+[2,]    0    1  0.0 0.6666667
+[3,]    0    0  3.0 0.6666667
+
+row: 3 
+
+ multiply row 3 by 0.3333333 
+     [,1] [,2] [,3]      [,4]
+[1,]    1    0  1.5 2.8333333
+[2,]    0    1  0.0 0.6666667
+[3,]    0    0  1.0 0.2222222
+
+ multiply row 3 by 1.5 and subtract from row 1 
+     [,1] [,2] [,3]      [,4]
+[1,]    1    0    0 2.5000000
+[2,]    0    1    0 0.6666667
+[3,]    0    0    1 0.2222222</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCg0KYGBge3J9DQpBIDwtIG1hdHJpeChjKDIsLTEsMywyLDIsMywtMiwzLDApLDMsMyxUUlVFKQ0KYiA8LSBjKDUsNywtMykNCnNob3dFcW4oQSxiKQ0KYGBgDQpgYGB7cn0NClNvbHZlKEEsYikNCmBgYA0KDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCg0KYGBge3J9DQpBIDwtIG1hdHJpeChjKDIsLTEsMywyLDIsMywtMiwzLDApLDMsMyxUUlVFKQ0KYiA8LSBjKDUsNywtMykNCnNob3dFcW4oQSxiKQ0KYGBgDQpgYGB7cn0NClNvbHZlKEEsYikNCmBgYA0KYGBge3J9DQpwbG90RXFuM2QoQSxiKQ0KYGBgDQoNCmBgYHtyfQ0KZWNoZWxvbihBLGIpDQpgYGANCmBgYHtyfQ0KZWNoZWxvbihBLGIsIHZlcmJvc2U9VFJVRSwgZnJhY3Rpb25zPVRSVUUpDQpgYGANCmBgYHtyfQ0KZWNoZWxvbihBLGIsIHZlcmJvc2U9VFJVRSkNCmBgYA0KDQo=</div>
 
 
 

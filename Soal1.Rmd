@@ -13,4 +13,18 @@ showEqn(A,b)
 ```{r}
 Solve(A,b)
 ```
+```{r}
+plotEqn3d(A,b)
+```
+
+```{r}
+echelon(A,b)
+```
+
+```{r}
+echelon(A,b,verbose=TRUE, fractions=TRUE)
+```
+```{r}
+echelon(A,b, verbose=TRUE)
+```
 

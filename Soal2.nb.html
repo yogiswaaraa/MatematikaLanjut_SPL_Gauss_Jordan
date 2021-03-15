@@ -1760,10 +1760,186 @@ showEqn(A,b)</code></pre>
     x3  =  -1 </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdEVxbjNkKEEsYilcbmBgYCJ9 -->
+<pre class="r"><code>plotEqn3d(A,b)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZWNoZWxvbihBLGIpXG5gYGAifQ== -->
+<pre class="r"><code>echelon(A,b)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl0gWywzXSBbLDRdXG5bMSxdICAgIDEgICAgMCAgICAwICAgLTNcblsyLF0gICAgMCAgICAxICAgIDAgICAtMVxuWzMsXSAgICAwICAgIDAgICAgMSAgIC0xXG4ifQ== -->
+<pre><code>     [,1] [,2] [,3] [,4]
+[1,]    1    0    0   -3
+[2,]    0    1    0   -1
+[3,]    0    0    1   -1</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZWNoZWxvbihBLGIsIHZlcmJvc2U9VFJVRSwgZnJhY3Rpb25zPVRSVUUpXG5gYGAifQ== -->
+<pre class="r"><code>echelon(A,b, verbose=TRUE, fractions=TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5Jbml0aWFsIG1hdHJpeDpcbiAgICAgWywxXSBbLDJdIFssM10gWyw0XVxuWzEsXSAgIDIgICAgNSAgICAxICAtMTIgXG5bMixdICAtMSAgICA0ICAgIDMgICAtNCBcblszLF0gICA1ICAgIDAgICAtMiAgLTEzIFxuXG5yb3c6IDEgXG5cbiBleGNoYW5nZSByb3dzIDEgYW5kIDMgXG4gICAgIFssMV0gWywyXSBbLDNdIFssNF1cblsxLF0gICA1ICAgIDAgICAtMiAgLTEzIFxuWzIsXSAgLTEgICAgNCAgICAzICAgLTQgXG5bMyxdICAgMiAgICA1ICAgIDEgIC0xMiBcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDEvNSBcbiAgICAgWywxXSAgWywyXSAgWywzXSAgWyw0XSBcblsxLF0gICAgIDEgICAgIDAgIC0yLzUgLTEzLzVcblsyLF0gICAgLTEgICAgIDQgICAgIDMgICAgLTRcblszLF0gICAgIDIgICAgIDUgICAgIDEgICAtMTJcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDEgYW5kIGFkZCB0byByb3cgMiBcbiAgICAgWywxXSAgWywyXSAgWywzXSAgWyw0XSBcblsxLF0gICAgIDEgICAgIDAgIC0yLzUgLTEzLzVcblsyLF0gICAgIDAgICAgIDQgIDEzLzUgLTMzLzVcblszLF0gICAgIDIgICAgIDUgICAgIDEgICAtMTJcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDIgYW5kIHN1YnRyYWN0IGZyb20gcm93IDMgXG4gICAgIFssMV0gIFssMl0gIFssM10gIFssNF0gXG5bMSxdICAgICAxICAgICAwICAtMi81IC0xMy81XG5bMixdICAgICAwICAgICA0ICAxMy81IC0zMy81XG5bMyxdICAgICAwICAgICA1ICAgOS81IC0zNC81XG5cbnJvdzogMiBcblxuIGV4Y2hhbmdlIHJvd3MgMiBhbmQgMyBcbiAgICAgWywxXSAgWywyXSAgWywzXSAgWyw0XSBcblsxLF0gICAgIDEgICAgIDAgIC0yLzUgLTEzLzVcblsyLF0gICAgIDAgICAgIDUgICA5LzUgLTM0LzVcblszLF0gICAgIDAgICAgIDQgIDEzLzUgLTMzLzVcblxuIG11bHRpcGx5IHJvdyAyIGJ5IDEvNSBcbiAgICAgWywxXSAgIFssMl0gICBbLDNdICAgWyw0XSAgXG5bMSxdICAgICAgMSAgICAgIDAgICAtMi81ICAtMTMvNVxuWzIsXSAgICAgIDAgICAgICAxICAgOS8yNSAtMzQvMjVcblszLF0gICAgICAwICAgICAgNCAgIDEzLzUgIC0zMy81XG5cbiBtdWx0aXBseSByb3cgMiBieSA0IGFuZCBzdWJ0cmFjdCBmcm9tIHJvdyAzIFxuICAgICBbLDFdICAgWywyXSAgIFssM10gICBbLDRdICBcblsxLF0gICAgICAxICAgICAgMCAgIC0yLzUgIC0xMy81XG5bMixdICAgICAgMCAgICAgIDEgICA5LzI1IC0zNC8yNVxuWzMsXSAgICAgIDAgICAgICAwICAyOS8yNSAtMjkvMjVcblxucm93OiAzIFxuXG4gbXVsdGlwbHkgcm93IDMgYnkgMjUvMjkgXG4gICAgIFssMV0gICBbLDJdICAgWywzXSAgIFssNF0gIFxuWzEsXSAgICAgIDEgICAgICAwICAgLTIvNSAgLTEzLzVcblsyLF0gICAgICAwICAgICAgMSAgIDkvMjUgLTM0LzI1XG5bMyxdICAgICAgMCAgICAgIDAgICAgICAxICAgICAtMVxuXG4gbXVsdGlwbHkgcm93IDMgYnkgMi81IGFuZCBhZGQgdG8gcm93IDEgXG4gICAgIFssMV0gICBbLDJdICAgWywzXSAgIFssNF0gIFxuWzEsXSAgICAgIDEgICAgICAwICAgICAgMCAgICAgLTNcblsyLF0gICAgICAwICAgICAgMSAgIDkvMjUgLTM0LzI1XG5bMyxdICAgICAgMCAgICAgIDAgICAgICAxICAgICAtMVxuXG4gbXVsdGlwbHkgcm93IDMgYnkgOS8yNSBhbmQgc3VidHJhY3QgZnJvbSByb3cgMiBcbiAgICAgWywxXSBbLDJdIFssM10gWyw0XVxuWzEsXSAgMSAgICAwICAgIDAgICAtMyAgXG5bMixdICAwICAgIDEgICAgMCAgIC0xICBcblszLF0gIDAgICAgMCAgICAxICAgLTEgIFxuIn0= -->
+<pre><code>
+Initial matrix:
+     [,1] [,2] [,3] [,4]
+[1,]   2    5    1  -12 
+[2,]  -1    4    3   -4 
+[3,]   5    0   -2  -13 
+
+row: 1 
+
+ exchange rows 1 and 3 
+     [,1] [,2] [,3] [,4]
+[1,]   5    0   -2  -13 
+[2,]  -1    4    3   -4 
+[3,]   2    5    1  -12 
+
+ multiply row 1 by 1/5 
+     [,1]  [,2]  [,3]  [,4] 
+[1,]     1     0  -2/5 -13/5
+[2,]    -1     4     3    -4
+[3,]     2     5     1   -12
+
+ multiply row 1 by 1 and add to row 2 
+     [,1]  [,2]  [,3]  [,4] 
+[1,]     1     0  -2/5 -13/5
+[2,]     0     4  13/5 -33/5
+[3,]     2     5     1   -12
+
+ multiply row 1 by 2 and subtract from row 3 
+     [,1]  [,2]  [,3]  [,4] 
+[1,]     1     0  -2/5 -13/5
+[2,]     0     4  13/5 -33/5
+[3,]     0     5   9/5 -34/5
+
+row: 2 
+
+ exchange rows 2 and 3 
+     [,1]  [,2]  [,3]  [,4] 
+[1,]     1     0  -2/5 -13/5
+[2,]     0     5   9/5 -34/5
+[3,]     0     4  13/5 -33/5
+
+ multiply row 2 by 1/5 
+     [,1]   [,2]   [,3]   [,4]  
+[1,]      1      0   -2/5  -13/5
+[2,]      0      1   9/25 -34/25
+[3,]      0      4   13/5  -33/5
+
+ multiply row 2 by 4 and subtract from row 3 
+     [,1]   [,2]   [,3]   [,4]  
+[1,]      1      0   -2/5  -13/5
+[2,]      0      1   9/25 -34/25
+[3,]      0      0  29/25 -29/25
+
+row: 3 
+
+ multiply row 3 by 25/29 
+     [,1]   [,2]   [,3]   [,4]  
+[1,]      1      0   -2/5  -13/5
+[2,]      0      1   9/25 -34/25
+[3,]      0      0      1     -1
+
+ multiply row 3 by 2/5 and add to row 1 
+     [,1]   [,2]   [,3]   [,4]  
+[1,]      1      0      0     -3
+[2,]      0      1   9/25 -34/25
+[3,]      0      0      1     -1
+
+ multiply row 3 by 9/25 and subtract from row 2 
+     [,1] [,2] [,3] [,4]
+[1,]  1    0    0   -3  
+[2,]  0    1    0   -1  
+[3,]  0    0    1   -1  </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZWNoZWxvbihBLGIsIHZlcmJvc2U9VFJVRSlcbmBgYCJ9 -->
+<pre class="r"><code>echelon(A,b, verbose=TRUE)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5Jbml0aWFsIG1hdHJpeDpcbiAgICAgWywxXSBbLDJdIFssM10gWyw0XVxuWzEsXSAgICAyICAgIDUgICAgMSAgLTEyXG5bMixdICAgLTEgICAgNCAgICAzICAgLTRcblszLF0gICAgNSAgICAwICAgLTIgIC0xM1xuXG5yb3c6IDEgXG5cbiBleGNoYW5nZSByb3dzIDEgYW5kIDMgXG4gICAgIFssMV0gWywyXSBbLDNdIFssNF1cblsxLF0gICAgNSAgICAwICAgLTIgIC0xM1xuWzIsXSAgIC0xICAgIDQgICAgMyAgIC00XG5bMyxdICAgIDIgICAgNSAgICAxICAtMTJcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDAuMiBcbiAgICAgWywxXSBbLDJdIFssM10gIFssNF1cblsxLF0gICAgMSAgICAwIC0wLjQgIC0yLjZcblsyLF0gICAtMSAgICA0ICAzLjAgIC00LjBcblszLF0gICAgMiAgICA1ICAxLjAgLTEyLjBcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDEgYW5kIGFkZCB0byByb3cgMiBcbiAgICAgWywxXSBbLDJdIFssM10gIFssNF1cblsxLF0gICAgMSAgICAwIC0wLjQgIC0yLjZcblsyLF0gICAgMCAgICA0ICAyLjYgIC02LjZcblszLF0gICAgMiAgICA1ICAxLjAgLTEyLjBcblxuIG11bHRpcGx5IHJvdyAxIGJ5IDIgYW5kIHN1YnRyYWN0IGZyb20gcm93IDMgXG4gICAgIFssMV0gWywyXSBbLDNdIFssNF1cblsxLF0gICAgMSAgICAwIC0wLjQgLTIuNlxuWzIsXSAgICAwICAgIDQgIDIuNiAtNi42XG5bMyxdICAgIDAgICAgNSAgMS44IC02Ljhcblxucm93OiAyIFxuXG4gZXhjaGFuZ2Ugcm93cyAyIGFuZCAzIFxuICAgICBbLDFdIFssMl0gWywzXSBbLDRdXG5bMSxdICAgIDEgICAgMCAtMC40IC0yLjZcblsyLF0gICAgMCAgICA1ICAxLjggLTYuOFxuWzMsXSAgICAwICAgIDQgIDIuNiAtNi42XG5cbiBtdWx0aXBseSByb3cgMiBieSAwLjIgXG4gICAgIFssMV0gWywyXSAgWywzXSAgWyw0XVxuWzEsXSAgICAxICAgIDAgLTAuNDAgLTIuNjBcblsyLF0gICAgMCAgICAxICAwLjM2IC0xLjM2XG5bMyxdICAgIDAgICAgNCAgMi42MCAtNi42MFxuXG4gbXVsdGlwbHkgcm93IDIgYnkgNCBhbmQgc3VidHJhY3QgZnJvbSByb3cgMyBcbiAgICAgWywxXSBbLDJdICBbLDNdICBbLDRdXG5bMSxdICAgIDEgICAgMCAtMC40MCAtMi42MFxuWzIsXSAgICAwICAgIDEgIDAuMzYgLTEuMzZcblszLF0gICAgMCAgICAwICAxLjE2IC0xLjE2XG5cbnJvdzogMyBcblxuIG11bHRpcGx5IHJvdyAzIGJ5IDAuODYyMDY5IFxuICAgICBbLDFdIFssMl0gIFssM10gIFssNF1cblsxLF0gICAgMSAgICAwIC0wLjQwIC0yLjYwXG5bMixdICAgIDAgICAgMSAgMC4zNiAtMS4zNlxuWzMsXSAgICAwICAgIDAgIDEuMDAgLTEuMDBcblxuIG11bHRpcGx5IHJvdyAzIGJ5IDAuNCBhbmQgYWRkIHRvIHJvdyAxIFxuICAgICBbLDFdIFssMl0gWywzXSAgWyw0XVxuWzEsXSAgICAxICAgIDAgMC4wMCAtMy4wMFxuWzIsXSAgICAwICAgIDEgMC4zNiAtMS4zNlxuWzMsXSAgICAwICAgIDAgMS4wMCAtMS4wMFxuXG4gbXVsdGlwbHkgcm93IDMgYnkgMC4zNiBhbmQgc3VidHJhY3QgZnJvbSByb3cgMiBcbiAgICAgWywxXSBbLDJdIFssM10gWyw0XVxuWzEsXSAgICAxICAgIDAgICAgMCAgIC0zXG5bMixdICAgIDAgICAgMSAgICAwICAgLTFcblszLF0gICAgMCAgICAwICAgIDEgICAtMVxuIn0= -->
+<pre><code>
+Initial matrix:
+     [,1] [,2] [,3] [,4]
+[1,]    2    5    1  -12
+[2,]   -1    4    3   -4
+[3,]    5    0   -2  -13
+
+row: 1 
+
+ exchange rows 1 and 3 
+     [,1] [,2] [,3] [,4]
+[1,]    5    0   -2  -13
+[2,]   -1    4    3   -4
+[3,]    2    5    1  -12
+
+ multiply row 1 by 0.2 
+     [,1] [,2] [,3]  [,4]
+[1,]    1    0 -0.4  -2.6
+[2,]   -1    4  3.0  -4.0
+[3,]    2    5  1.0 -12.0
+
+ multiply row 1 by 1 and add to row 2 
+     [,1] [,2] [,3]  [,4]
+[1,]    1    0 -0.4  -2.6
+[2,]    0    4  2.6  -6.6
+[3,]    2    5  1.0 -12.0
+
+ multiply row 1 by 2 and subtract from row 3 
+     [,1] [,2] [,3] [,4]
+[1,]    1    0 -0.4 -2.6
+[2,]    0    4  2.6 -6.6
+[3,]    0    5  1.8 -6.8
+
+row: 2 
+
+ exchange rows 2 and 3 
+     [,1] [,2] [,3] [,4]
+[1,]    1    0 -0.4 -2.6
+[2,]    0    5  1.8 -6.8
+[3,]    0    4  2.6 -6.6
+
+ multiply row 2 by 0.2 
+     [,1] [,2]  [,3]  [,4]
+[1,]    1    0 -0.40 -2.60
+[2,]    0    1  0.36 -1.36
+[3,]    0    4  2.60 -6.60
+
+ multiply row 2 by 4 and subtract from row 3 
+     [,1] [,2]  [,3]  [,4]
+[1,]    1    0 -0.40 -2.60
+[2,]    0    1  0.36 -1.36
+[3,]    0    0  1.16 -1.16
+
+row: 3 
+
+ multiply row 3 by 0.862069 
+     [,1] [,2]  [,3]  [,4]
+[1,]    1    0 -0.40 -2.60
+[2,]    0    1  0.36 -1.36
+[3,]    0    0  1.00 -1.00
+
+ multiply row 3 by 0.4 and add to row 1 
+     [,1] [,2] [,3]  [,4]
+[1,]    1    0 0.00 -3.00
+[2,]    0    1 0.36 -1.36
+[3,]    0    0 1.00 -1.00
+
+ multiply row 3 by 0.36 and subtract from row 2 
+     [,1] [,2] [,3] [,4]
+[1,]    1    0    0   -3
+[2,]    0    1    0   -1
+[3,]    0    0    1   -1</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCmBgYHtyfQ0KQSA8LSBtYXRyaXgoYygyLDUsMSwtMSw0LDMsNSwwLC0yKSwzLDMsVFJVRSkNCmIgPC0gYygtMTIsLTQsLTEzKQ0Kc2hvd0VxbihBLGIpDQpgYGANCmBgYHtyfQ0KU29sdmUoQSxiKQ0KYGBgDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCmBgYHtyfQ0KQSA8LSBtYXRyaXgoYygyLDUsMSwtMSw0LDMsNSwwLC0yKSwzLDMsVFJVRSkNCmIgPC0gYygtMTIsLTQsLTEzKQ0Kc2hvd0VxbihBLGIpDQpgYGANCmBgYHtyfQ0KU29sdmUoQSxiKQ0KYGBgDQpgYGB7cn0NCnBsb3RFcW4zZChBLGIpDQpgYGANCg0KYGBge3J9DQplY2hlbG9uKEEsYikNCmBgYA0KYGBge3J9DQplY2hlbG9uKEEsYiwgdmVyYm9zZT1UUlVFLCBmcmFjdGlvbnM9VFJVRSkNCmBgYA0KYGBge3J9DQplY2hlbG9uKEEsYiwgdmVyYm9zZT1UUlVFKQ0KYGBgDQoNCg==</div>
 
 
 
